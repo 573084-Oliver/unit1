@@ -32,8 +32,15 @@ public class BoulderScript : MonoBehaviour
             rb.linearVelocityY = 1;
             
         }
-
     }
+     private void OnCollisionExit2D(Collision2D other)
+    {
+        if (other.gameObject.tag == "Player")
+        {
+            rb.linearVelocityY = 0;    
+        }
+    }
+    
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.tag == "Correct")
@@ -44,10 +51,10 @@ public class BoulderScript : MonoBehaviour
 
         if (other.gameObject.tag == "Incorrect")
         {
-            rb.linearVelocityY = 0;
+            /*rb.linearVelocityY = 0;
             GameObject clone;
             clone = Instantiate(skeleton, transform.position, transform.rotation);
-            rb.transform.position = new Vector3(transform.position.x, transform.position.y + 3, transform.position.z + 1);
+            rb.transform.position = new Vector3(transform.position.x, transform.position.y + 3, transform.position.z + 1);*/
         }
     }
 }

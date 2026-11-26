@@ -17,6 +17,13 @@ TagManager:
   - SEnemy
   - CEnemy
   - MEnemy
+  - Raft
+  - Fire
+  - Axe
+  - Tree
+  - Stick
+  - Dark
+  - Water
   layers:
   - Default
   - TransparentFX

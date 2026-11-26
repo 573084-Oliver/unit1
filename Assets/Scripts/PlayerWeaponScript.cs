@@ -10,7 +10,7 @@ public class PlayerWeaponScript : MonoBehaviour
     void Start()
     {
         helper = gameObject.GetComponent<HelperScript>();
-        Invoke("Destroy", 0.25f);
+        Invoke("Destroy", 0.4f);
     }
 
     // Update is called once per frame

@@ -39,7 +39,7 @@ public class MonkeyEnemyScript : MonoBehaviour
             clone = Instantiate(nut, transform.position, transform.rotation);
 
             Rigidbody2D rb = clone.GetComponent<Rigidbody2D>();
-            rb.linearVelocity = new Vector2(-5, 0);
+            rb.linearVelocity = new Vector2(-2, 0);
 
             rb.transform.position = new Vector3(transform.position.x + -0.8f, transform.position.y 
             , transform.position.z + 1);
@@ -51,7 +51,7 @@ public class MonkeyEnemyScript : MonoBehaviour
             clone = Instantiate(nut, transform.position, transform.rotation);
 
             Rigidbody2D rb = clone.GetComponent<Rigidbody2D>();
-            rb.linearVelocity = new Vector2(5, 0);
+            rb.linearVelocity = new Vector2(2, 0);
 
             rb.transform.position = new Vector3(transform.position.x + 0.8f, transform.position.y
             , transform.position.z + 1);
